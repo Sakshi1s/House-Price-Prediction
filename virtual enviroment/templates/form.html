@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="static/css/css_form/house1.css">
+</head>
+<body>
+    <div class="s1">
+    <form class="container" action="{{ url_for('predict')}}" method="POST">
+        <h1>Want to predict the price of a house? Fill the details below: </h1>
+        <div class="s2">
+               <label>Select Neighborhood:</label>
+                <select class="form-select" name="Neighborhood">
+                  <option disabled="disabled" selected="selected">--select neighborhood--</option>
+                  <option>CollgCr</option>
+                    <option>IDOTRR</option>
+                    <option>MeadowV</option>
+                    <option>Names</option>
+                   </select>
+            
+             </div>
+             <div class="s2">
+                <label>Select Condition:</label>
+                 <select class="form-select" name="Condition1">
+                  <option disabled>--select condition--</option>
+                     <option>Artery</option>
+                     <option>Feedr</option>
+                     <option>RRNn</option>
+                     <option>RRAe</option>
+                    </select>
+        
+              </div>
+              <div class="field">
+                <input type="number" name="YearBuilt" autofocus/>
+                   <label>Enter YearBuilt:</label>
+                 </div>
+                 <div class="s2">
+                    <label>Select type of dwelling:</label>
+                   
+                     <select class="form-select" name="BldgType">
+                      <option disabled>--select type--</option>
+                         <option>1Fam</option>
+                         <option>2FmCon</option>
+                         <option>TwnhsI</option>
+                         <option>Duplx</option>
+                        </select>
+      
+                  </div>
+                       
+             <div class="field">
+             <input type="number" name="BedroomAbvGr" autofocus/>
+            <label>Enter Bedroom:</label>
+          </div>
+          <div class="field">
+            <input type="number" name="KitchenAbvGr" autofocus/>
+           <label>Enter Kitchen:</label>
+         </div>
+         <div class="field">
+            <input type="number" name="FullBath" autofocus/>
+            <label>Enter Number of Bathrooms:</label>
+          </div>
+          <div class="field">
+            <input type="number" name="GarageCars" autofocus/>
+            <label>Enter Amenities:</label>
+          </div>
+           <div class="field">
+            <input type="number" name="LotArea" autofocus/>
+            <label>Enter Total Square Feet:</label>
+          </div>
+          <input class="button" type="submit" value="Predict Price" />
+    </form> 
+</div>  
+</body>
+</html>
