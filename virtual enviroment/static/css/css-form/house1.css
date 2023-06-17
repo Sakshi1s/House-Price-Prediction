@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    color: rgb(14 13 12);
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+      "sans-serif";
+  }
+  
+  html,
+  body {
+    background:#ba63ba ;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *:focus {
+    outline: 0;
+  }
+  .container h1{
+    color: rgb(10, 10, 10);
+  }
+form .s1 {
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    justify-content: center;
+    display: inline-grid;
+    width: 100%;
+    margin: 0;
+  }
+  
+  form * {
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  form .s2 label {
+    position: absolute;
+    background: linear-gradient(90deg, #ac187b, #372056);
+    text-align: center;
+    padding: 20px 0;
+    width: 19%;
+    height: 70px;
+  }
+
+
+  form .field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #ac187b, #372056);
+    width: 50%;
+    height: 64px;
+    text-align: center;
+    padding: 18px 0;
+  }
+
+  
+  form .field input[type="number"] {
+    border: none;
+    width: 100%;
+    height: 74px;
+    margin: 0;
+    padding-left: 19.5%;
+    text-align: right;
+    color: #0a0c0c;
+  }
+
+form h1{
+  padding: 20px;
+}
+
+  form .s2{
+    height:80px;
+  color: #372056;
+  }
+
+  .form-select{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+  color: #0a0c0c;
+  }
+  
+  form input[type="number"]:not(:placeholder-shown) + label{
+    width: 44%;
+    height: 100%;
+  }
+  
+  form input[type="submit"] {
+    background: linear-gradient(90deg, #b13e8b, #5c023e);
+    border: none;
+    position: relative;
+    padding: 13px 50px;
+  }
+  form input[type="submit"]:hover,
+  form input[type="submit"]:focus {
+    background: #372056;  
+  }
+  
